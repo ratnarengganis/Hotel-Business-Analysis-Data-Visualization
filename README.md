@@ -9,25 +9,25 @@
 ### Project Introduction
 This project is the second mini project created by an expert tutor at Rakamin Academy. In this project, I will take on the role of a data analyst who performs an analysis of hotel booking data and presents it through data visualization.
 
-### Table of Contents
-1. [Business Understanding](#business-understanding)
-    a. [Problem Statement](#problem-statement)
-    b. [Objective](#objective)
+### Table of Contents <b>
+1. [Business Understanding](#business-understanding) <b>
+    a. [Problem Statement](#problem-statement) <b>
+    b. [Objective](#objective) <b>
 
-2. [Exploratory Data Analysis](#exploratory-data-analysis)
-    a. [Dataset Information](#dataset-information)
-    b. [Statistical Summary](#statistical-summary)
+2. [Exploratory Data Analysis](#exploratory-data-analysis) <b>
+    a. [Dataset Information](#dataset-information) <b>
+    b. [Statistical Summary](#statistical-summary) <b>
 
-3. [Data Preprocessing](#data-preprocessing)
-   a. [Handling Missing Value](#handling-missing-value)
-   b. [Handling Invalid Data](#handling-invalid-data)
-   c. [Removing Uneccesarry Value](#removing-uneccesarry-value)
-   d. [Feature Engineering](#feature_engineering).
+3. [Data Preprocessing](#data-preprocessing) <b>
+   a. [Handling Missing Value](#handling-missing-value) <b>
+   b. [Handling Invalid Data](#handling-invalid-data) <b>
+   c. [Removing Uneccesarry Value](#removing-uneccesarry-value) <b>
+   d. [Feature Engineering](#feature_engineering). <b>
 
-5. [Data Analysis](#data-analysis)
-   a. [Monthly Hotel Booking Analysis Based on Hotel Type](#monthly-hotel-booking-analysis-based-on-hotel-type)
-   b. [Impact Analysis of Stay Duration on Hotel Bookings Cancellation Rates](#impact-analysis-of-stay-duration-on-hotel-bookings-cancellation-rates)
-   c. [Impact Analysis of Lead Time on Hotel Bookings Cancellation Rate](#impact-analysis-of-lead-time-on-hotel-bookings-cancellation-rate)
+5. [Data Analysis](#data-analysis) <b>
+   a. [Monthly Hotel Booking Analysis Based on Hotel Type](#monthly-hotel-booking-analysis-based-on-hotel-type) <b>
+   b. [Impact Analysis of Stay Duration on Hotel Bookings Cancellation Rates](#impact-analysis-of-stay-duration-on-hotel-bookings-cancellation-rates) <b>
+   c. [Impact Analysis of Lead Time on Hotel Bookings Cancellation Rate](#impact-analysis-of-lead-time-on-hotel-bookings-cancellation-rate) <b>
 
 
 ## :pushpin: Business Understanding
@@ -44,6 +44,7 @@ The main objective of this project is to analyze customer behavior patterns in h
 
 
 
+Image 1. Data Information
 The dataset consists of 29 columns and 119,390 rows spanning the period from 2017 to 2019.
 
 ### b. Statistical Summary
@@ -52,11 +53,14 @@ The dataset consists of 29 columns and 119,390 rows spanning the period from 201
 
 
 
+Image 2. Statistical Summary of Numerical Data Columns
+
 ![Image 3. Statistical Summary of Categorical Data Columns](3.png).
 
 
 
 
+Image 3. Statistical Summary of Categorical Data Columns
 
 ## :pushpin: Data Preprocessing
 ### a. Handling Null Value
@@ -78,7 +82,7 @@ To address these missing values, we can fill numerical columns (Children, Agent,
 Invalid values are present in the "meal" column, specifically the value 'undefined'. This value will be replaced with 'No Meal' because 'undefined' cannot be interpreted as one of the meal types. Replacing it with 'No Meal' will make the data more consistent and avoid misinterpretations.
 
 ### c. Removing Uneccessary Value
-
+In this phase, data that appears illogical will be removed. For example, rows that have values in both the > adults and "children" columns will be deleted as this indicates that there are no guests. Additionally, rows with a value of 0 in the "adults" column but a value greater than 0 in the "children" or "babies" columns will be removed. This is done because it is highly unlikely for underage children to check in at a hotel without being accompanied by adults. Finally, rows in the "adr" column with negative values will also be removed to ensure data consistency
 
 
 
