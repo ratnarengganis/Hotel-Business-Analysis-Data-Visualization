@@ -9,62 +9,67 @@
 ### Project Introduction
 This project is the second mini project created by an expert tutor at Rakamin Academy. In this project, I will take on the role of a data analyst who performs an analysis of hotel booking data and presents it through data visualization.
 
-### Table of Contents <b>
-1. [Business Understanding](#business-understanding) <b>
-    a. [Problem Statement](#problem-statement) <b>
-    b. [Objective](#objective) <b>
+### Table of Contents
+1. [Business Understanding](#business-understanding)
+    - [Problem Statement](#problem-statement)
+    - [Objective](#objective)
 
-2. [Exploratory Data Analysis](#exploratory-data-analysis) <b>
-    a. [Dataset Information](#dataset-information) <b>
-    b. [Statistical Summary](#statistical-summary) <b>
+2. [Exploratory Data Analysis](#exploratory-data-analysis)
+    - [Dataset Information](#dataset-information)
+    - [Statistical Summary](#statistical-summary)
 
-3. [Data Preprocessing](#data-preprocessing) <b>
-   a. [Handling Missing Value](#handling-missing-value) <b>
-   b. [Handling Invalid Data](#handling-invalid-data) <b>
-   c. [Removing Uneccesarry Value](#removing-uneccesarry-value) <b>
-   d. [Feature Engineering](#feature_engineering). <b>
+3. [Data Preprocessing](#data-preprocessing)
+    - [Handling Missing Value](#handling-missing-value)
+    - [Handling Invalid Data](#handling-invalid-data)
+    - [Removing Uneccesarry Value](#removing-uneccesarry-value)
+    - [Feature Engineering](#feature-engineering).
 
-5. [Data Analysis](#data-analysis) <b>
-   a. [Monthly Hotel Booking Analysis Based on Hotel Type](#monthly-hotel-booking-analysis-based-on-hotel-type) <b>
-   b. [Impact Analysis of Stay Duration on Hotel Bookings Cancellation Rates](#impact-analysis-of-stay-duration-on-hotel-bookings-cancellation-rates) <b>
-   c. [Impact Analysis of Lead Time on Hotel Bookings Cancellation Rate](#impact-analysis-of-lead-time-on-hotel-bookings-cancellation-rate) <b>
+4. [Data Analysis](#data-analysis)
+    - [Monthly Hotel Booking Analysis Based on Hotel Type](#monthly-hotel-booking-analysis-based-on-hotel-type)
+    - [Impact Analysis of Stay Duration on Hotel Bookings Cancellation Rates](#impact-analysis-of-stay-duration-on-hotel-bookings-cancellation-rates)
+    - [Impact Analysis of Lead Time on Hotel Bookings Cancellation Rate](#impact-analysis-of-lead-time-on-hotel-bookings-cancellation-rate)
+
+
 
 
 ## :pushpin: Business Understanding
-### a. Problem Statement
+---
+### **a. Problem Statement**
 For a company, it is crucial to consistently analyze its business performance. In this endeavor, we will delve into the hospitality industry, specifically focusing on understanding customer behavior in hotel reservations and its correlation with booking cancellation rates. The insights we uncover will be presented through data visualizations to enhance comprehension and persuasive communication.
 
-### b. Objective:
+### **b. Objective:**
 The main objective of this project is to analyze customer behavior patterns in hotel reservations and their association with booking cancellation rates. By examining the dataset, we aim to identify trends, factors, and potential insights that contribute to booking cancellations, ultimately helping businesses make informed decisions.
 
+
 ## :pushpin: Exploratory Data Analysis
-### a. Data Information
-![Image 1. Data Information](1.png)
-Image 1. Data Information
+---
+### **a. Data Information**
+![Image 1. Data Information](1.png) Image 1. Data Information
 
 
 
 
 The dataset consists of 29 columns and 119,390 rows spanning the period from 2017 to 2019.
 
-### b. Statistical Summary
-![Image 2. Statistical Summary of Numerical Data Columns](2.png).
-Image 2. Statistical Summary of Numerical Data Columns
+### **b. Statistical Summary**
+![Image 2. Statistical Summary of Numerical Data Columns](2.png) Image 2. Statistical Summary of Numerical Data Columns
 
 
 
 
 
-![Image 3. Statistical Summary of Categorical Data Columns](3.png).
-Image 3. Statistical Summary of Categorical Data Columns
+![Image 3. Statistical Summary of Categorical Data Columns](3.png) Image 3. Statistical Summary of Categorical Data Columns
+
 
 
 
 
 
 ## :pushpin: Data Preprocessing
-### a. Handling Null Value
+---
+### **a. Handling Null Value**
 ![Image 4. Null Value](4.png)
+
 Image 4. Null Value
 
 
@@ -92,7 +97,9 @@ Several features were added to facilitate the analysis:
 - The `total_stays` column was introduced to calculate the total stay duration, calculated by summing the values in the `stays_in_weekend_nights` and `stays_in_weekdays_nights` columns.
 - The `lead_time_category` column was generated to categorize values in the `lead_time` column for easier analysis.
 
+
 ## :pushpin: Data Analysis
+---
 ### a. Monthly Hotel Booking Analysis Based on Hotel Type
 This analysis focuses on examining the booking trends for each type of hotel.
 ![Image 5](5.png)
