@@ -10,7 +10,7 @@
 This project is the second mini project created by an expert tutor at Rakamin Academy. In this project, I will take on the role of a data analyst who performs an analysis of hotel booking data and presents it through data visualization.
 
 ### Table of Contents
-1. [Business Understanding](#:pushpin:-Business-Understanding)
+1. [Business Understanding](#Business-Understanding)
     - [Problem Statement](#problem-statement)
     - [Objective](#objective)
 
