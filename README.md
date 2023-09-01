@@ -69,7 +69,6 @@ The dataset consists of 29 columns and 119,390 rows spanning the period from 201
 ---
 ### **a. Handling Null Value**
 ![Image 4. Null Value](4.png)
-
 Image 4. Null Value
 
 
