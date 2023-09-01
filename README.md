@@ -31,7 +31,6 @@ This project is the second mini project created by an expert tutor at Rakamin Ac
 
 
 
-<b>
 ## :pushpin: Business Understanding
 ---
 ### **a. Problem Statement**
@@ -40,7 +39,8 @@ For a company, it is crucial to consistently analyze its business performance. I
 ### **b. Objective:**
 The main objective of this project is to analyze customer behavior patterns in hotel reservations and their association with booking cancellation rates. By examining the dataset, we aim to identify trends, factors, and potential insights that contribute to booking cancellations, ultimately helping businesses make informed decisions.
 
-<b>
+
+
 ## :pushpin: Exploratory Data Analysis
 ---
 ### **a. Data Information**
@@ -50,11 +50,13 @@ The main objective of this project is to analyze customer behavior patterns in h
 
 
 The dataset consists of 29 columns and 119,390 rows spanning the period from 2017 to 2019.
-<b>
-<b>
+
+
 ### **b. Statistical Summary**
 Statistical Summary of Numerical Data Columns
 ![Image 2. Statistical Summary of Numerical Data Columns](2.png)
+
+
 
 
 
@@ -66,8 +68,7 @@ Statistical Summary of Categorical Data Columns
 
 
 
-<b>
-</b>
+
 ## :pushpin: Data Preprocessing
 ---
 ### **a. Handling Null Value**
@@ -85,24 +86,23 @@ There are 4 columns with null values in the dataset:
 - **Company** Column: Contains null values in 112,593 rows, which is 94.307% of the total data.
   
 To address these missing values, we can fill numerical columns (`Children`, `Agent`, `Company`) with the value 0, and fill the "City" column with the label "unknown".
-<b>
-<b>
+
+
 ### b. Handling Invalid Data
 Invalid values are present in the `meal` column, specifically the value 'undefined'. This value will be replaced with 'No Meal' because 'undefined' cannot be interpreted as one of the meal types. Replacing it with 'No Meal' will make the data more consistent and avoid misinterpretations.
-<b>
-<b>
+
+
 ### c. Removing Uneccessary Value
 At this stage, data that appears to be illogical will be removed, such as rows with values of 0 in the columns `adults`, `children`, and `babies`, as this indicates that no guests are present. Next, rows with a value of 0 in the `adults` column but > 0 in the `children` or `babies` columns will be removed. This is done because it is unlikely for underage children to stay at a hotel without being accompanied by adults. Lastly, rows with negative values in the `adr` column will be deleted.
-<b>
-<b>
+
+
 ### d. Feature Engineering
 Several features were added to facilitate the analysis:
 - The `total_guests` column was created to calculate the total number of guests, obtained by summing the values in the `adults`, `children`, and `babies` columns.
 - The `total_stays` column was introduced to calculate the total stay duration, calculated by summing the values in the `stays_in_weekend_nights` and `stays_in_weekdays_nights` columns.
 - The `lead_time_category` column was generated to categorize values in the `lead_time` column for easier analysis.
 
-<b>
-</b>
+
 ## :pushpin: Data Analysis
 ---
 ### a. Monthly Hotel Booking Analysis Based on Hotel Type
@@ -113,7 +113,8 @@ This analysis focuses on examining the booking trends for each type of hotel.
 
 Intepretation:
 Based on the plot above, it can be observed that the _lowest hotel bookings_ (low season) for both city hotels and resort hotels occur during the months of _January_, _February_, and _March_. In contrast, the _peak season_ falls between _June_, _July_ and _August_, as well as _November_ and _December_. This pattern is likely influenced by the fact that the months of June to August coincide with school vacations and the Eid al-Fitr holiday, leading to a higher probability of people taking time off and making hotel reservations. Similarly, November and December, being school semester breaks and encompassing the Christmas and New Year holidays, also experience a peak in bookings.
-<b>
+
+
 ### b. Impact Analysis of Stay Duration on Hotel Bookings Cancellation Rates
 This analysis aims to observe the trend or correlation between the duration of stays and the booking cancellation rates.
 ![Image.6](6.png)
@@ -122,7 +123,8 @@ This analysis aims to observe the trend or correlation between the duration of s
 
 Intepretation:
 Across both hotel types, a distinct trend emerges that sheds light on the relationship between stays duration and booking cancellations. Notably, as the duration of stays extends, the probability of reservations being canceled also sees an upward trajectory. This pattern suggests a potential correlation between guests opting for longer stays and the higher chances of eventual booking cancellations. The insights garnered from this analysis can guide hotel management in tailoring their strategies and policies, considering the influence of stays duration on the booking cancellation dynamics.
-<b>
+
+
 ### c. Impact Analysis of Lead Time on Hotel Bookings Cancellation Rate
 This analysis focuses on examining the trend and correlation between lead time (the time interval between booking a hotel and the arrival date) and the hotel booking cancellation rate.
 ![Image 7](7.png)
